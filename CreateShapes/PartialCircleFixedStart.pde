@@ -1,9 +1,13 @@
-//circle
-//variables x,y,radius, 
+// Partial Circles with various sizes, postions, and start angles.
+// This can represent circles of all sizes, postions, and start angles.
+// This can not represent negative radius cause that makes no sense or start angles larger than end angles. 
 class PartialCircleFixedStart{
-  float x;
-  float y;
-  float angleStart;
+  // the x coordinate of the circle.
+  final float x;
+  // the y coordinate of the circle. 
+  final float y;
+  // the angle where the circle starts drawing.
+  final float angleStart;
 
 PartialCircleFixedStart(float startingX, float startingY, float startAngleStart){
   x = startingX;

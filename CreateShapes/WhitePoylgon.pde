@@ -1,10 +1,14 @@
  // Thank You to https://processing.org/examples/regularpolygon.html
 
 class WhitePolygon{
-  float x;
-  float y;
-  float radius;
-  int numberOfSides;
+  // the x coordinate of the circle.
+  final float x;
+  // the y coordinate of the circle. 
+  final float y;
+  // the radius of the circle.
+  final float radius;
+  // the number of sides of the polygon
+  final int numberOfSides;
 
 WhitePolygon(float startingX, float statingY, float rad, int sides){
   x= startingX;

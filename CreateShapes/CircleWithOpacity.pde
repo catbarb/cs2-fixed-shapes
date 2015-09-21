@@ -1,25 +1,33 @@
-//circle
-//variables x,y,radius, 
+// Circles with various sizes, colors, postions, and opacities.
+// This can represent circles of all sizes, colors, postions, and opacities.
+// This can not represent negative radius cause that makes no sense. 
 class CircleWithOpacity{
-  float x;
-  float y;
-  float radius;
-  float r;
-  float g;
-  float b;
-  float opacity;
+  // the x coordinate of the circle.
+  final float x;
+  // the y coordinate of the circle. 
+  final float y;
+  // the radius of the circle.
+  final float radius;
+  // red component of the cirlces color.
+  final float r;
+  // green component of the cirlces color.
+  final float g;
+  // blue component of the cirlces color.
+  final float b;
+  // opacity component of the cirlces color.
+  final float opacity;
 
-CircleWithOpacity(float startingX, float startingY ,float rad){
+CircleWithOpacity(float startingX, float startingY ,float rad,float red, float green, float blue, float opac){
   x = startingX;
   y = startingY;
   radius = rad;
-}
-
-void drawCircleWithOpacity(float red, float green, float blue, float opac){
   r = red;
   g = green;
   b = blue;
   opacity = opac;
+}
+
+void drawCircleWithOpacity(){
   fill(r,g,b,opacity);
   ellipse(x,y,radius,radius); 
 }
