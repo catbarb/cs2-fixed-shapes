@@ -1,6 +1,6 @@
 //circle
 //variables x,y,radius, 
-class ColoredCircle{
+class CircleWithOpacity{
   float x;
   float y;
   float radius;
@@ -9,13 +9,13 @@ class ColoredCircle{
   float b;
   float opacity;
 
-ColoredCircle(float startingX, float startingY ,float rad){
+CircleWithOpacity(float startingX, float startingY ,float rad){
   x = startingX;
   y = startingY;
   radius = rad;
 }
 
-void drawColoredCircle(float red, float green, float blue, float opac){
+void drawCircleWithOpacity(float red, float green, float blue, float opac){
   r = red;
   g = green;
   b = blue;

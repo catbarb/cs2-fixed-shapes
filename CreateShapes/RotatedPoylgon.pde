@@ -5,11 +5,14 @@ class Polygon{
   float y;
   float radius;
   int numberOfSides;
-
-Polygon(){
+Polygon(float startingX, float statingY, float rad, int sides){
+  x= startingX;
+  y= startingY;
+  radius= rad;
+  numberOfSides= sides;
 }
 
-void drawPolygon(float x, float y, float radius, int numberOfSides) {
+void drawPolygon() {
   float angle = TWO_PI / numberOfSides;
   fill(255);
   

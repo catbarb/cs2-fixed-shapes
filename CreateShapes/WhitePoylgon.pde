@@ -6,10 +6,14 @@ class WhitePolygon{
   float radius;
   int numberOfSides;
 
-WhitePolygon(){
+WhitePolygon(float startingX, float statingY, float rad, int sides){
+  x= startingX;
+  y= startingY;
+  radius= rad;
+  numberOfSides= sides;
 }
 
-void drawWHitePolygon(float x, float y, float radius, int numberOfSides) {
+void drawWHitePolygon() {
   float angle = TWO_PI / numberOfSides;
   fill(255);
   pushMatrix();
